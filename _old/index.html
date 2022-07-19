@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Link Scheduler</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="HolaMundo.js"></script>
+</head>
+<body>
+    <div class="header">
+        <navbar>
+            <div class="header__logo">
+                <a href="#"><img src="https://mpng.subpng.com/20180417/kdw/kisspng-logo-brand-random-icons-5ad592f6abd5c5.7372008015239462307039.jpg" alt="This is a logo"></a>
+            </div>
+            <div class="header__buttons">
+                <button class="header__buttons--button">I</button>
+                <button class="header__buttons--button">am</button>
+                <button class="header__buttons--button">a</button>
+                <button class="header__buttons--button">button</button>
+            </div>
+        </navbar>
+    </div>
+    <main>
+        <!-- <div class="background-container"></div> -->
+        <section class="main__grid">
+            <div class="main__grid--buttons">
+                <button class="main__grid--button main__grid--button-addButtonLink" data="addLinkButton">Add 1 link</button>
+                <button class="main__grid--button main__grid--button-addBunchButtonLink" data="addBunchLinkButton">Add a bunch of links</button>
+            </div>
+            <hola-mundo></hola-mundo>   
+            <my-tag text='Hello Webcomponent'></mi-tag>
+            <my-tag text='Este es otro Webcomponent'></mi-tag>
+            <my-tag text='Otro más'></mi-tag>
+                
+            <!-- flip card -->
+            <div class="flip-container">
+                <div class="card">
+                  <div class="frente">
+                    <h3>Frente<h3/>
+                  </div>
+                  <div class="dorso">
+                    <h3>Dorso</h3>
+                    <p>Más información aquí</p>
+                    <button>Botón</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script type="module">
+        import {MyTag} from './my-tag.js';
+        window.customElements.define('my-tag', MyTag);
+     </script>
+     
+</body>
+</html>
